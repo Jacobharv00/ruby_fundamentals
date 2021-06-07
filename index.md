@@ -15,3 +15,13 @@ I've generated the source code for today's discussion using the command `bundle 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIzhh1h8ZGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I also have a longer video on how you can [publish a gem](https://www.youtube.com/watch?v=RrAOlk6qoiM) for later reference.
+
+## Variables
+
+## Data Types
+
+## Methods vs Functions
+
+## Scope
+
+## Iterators
