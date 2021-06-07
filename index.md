@@ -25,6 +25,7 @@ let const or var keyword to indicate what kind of variable we're declaring
 |---|---|---|
 | Variable Declaration | let (something that can change), const (don't change or get an error!), var (potential scoping issues) `const name ="Dakota"` | no keywords for declaration. `name = "Dakota"`  |
 | constant  | const varName (throws an error if you try to reassign) |  ALL_CAPS_NAME (doesn't throw an error if you reassign it) |
+
 ## Data Types
 - String
 - Boolean
@@ -98,10 +99,11 @@ NAME = "Dakota"
 will print "Dakota" to the console.
 
 ## Iterators
+
 | Concept  | JS  | Ruby |
 |---|---|---|
 | Basic |  forEach (returns undefined) | each (returns original array) |
-| transforming | map  | map (alias called collect)  |
+| transforming | map | map (alias called collect)  |
 | searching for one | find  | find (alias called detect)  |
 | searching for multiple | filter | select |
 | reducing to a single value | reduce | reduce (alias called inject) |
