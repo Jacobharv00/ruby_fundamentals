@@ -1,50 +1,47 @@
+# Variables in JS
 require 'pry'
+
+NAME = "Dakota"
+NAMES = ["Victoria", "Mo", "Nicholas", "Sue", "Greg", "Paul", "Jimmy", "Dakota"]
 
 def print_name(name)
   puts name
-  name
 end
 
-def starts_with_a_d?(name)
-  name[0].downcase == 'd'
-end
+print_name "Dakota"
 
-def print_names(names)
-  names.each do |name|
-    puts name
-  end
+def say_greeting(name)
+  puts "My name is #{name}"
+  "My name is #{name}"
 end
-
-names = ['Joaquin', 'Yisrael', 'Megan', 'Francisco', 'Json', 'Jami', 'Leon', 'Dakota']
+name = "Mo"
 
 def favorite_meals
   {
-    breakfast: ["Bacon & Scrambled Eggs"],
-    lunch: ["BLT"],
-    dinner: ["Spinach Curry"]
-  }
-  {
-    "breakfast" => ["Bacon & Scrambled Eggs"],
-    "lunch" => ["BLT"],
-    "dinner" => ["Spinach Curry"]
+    breakfast: ["Scrambled Eggs"],
+    lunch: ["Ramen"],
+    dinner: ["Burritos", "Grilled Octopus"]
   }
 end
-print_names(names)
-
 # binding.pry
 
-
-def get_episodes_by_season(season_number)
-  episodes = friends["_embedded"]["episodes"]
-  episodes.select {|episode| episode["season"] == season_number}
-end
-
-def who_played(character_name)
-  cast = friends["_embedded"]["cast"]
-  cast_member = cast.find {|cast_member| cast_member["character"]["name"] == character_name }
-  cast_member["person"]["name"]
+def get_episodes
+  friends["_embedded"]["episodes"]
 end
 
 def get_episode_names
-  friends["_embedded"]["episodes"].map {|episode| episode["name"]}
+  get_episodes.map {|episode| episode["name"] }
+end
+
+def get_episode_name(season_number, episode_number)
+  episode = get_episodes.find do |e| 
+    e["season"] == season_number && e["number"] == episode_number 
+  end
+  episode && episode["name"]
+end
+
+def get_episodes_by_season(season_number)
+  get_episodes.select do |e|
+    e["season"] == season_number
+  end
 end

@@ -4,6 +4,21 @@ RSpec.describe RubyFundamentals do
   end
 end
 
+RSpec.describe "get_episode_names" do
+  it "returns an array of episode names" do
+    expect(get_episode_names.length).to eq(236)
+    expect(get_episode_names.first).to eq("The One Where Monica Gets a Roommate")
+    expect(get_episode_names.last).to eq("The Last One,\n  Part 2")
+  end
+end
+
+RSpec.describe "get_episode_name" do
+  it "takes a season number and episode number as arguments and returns the name of the episode" do
+    expect(get_episode_name(9, 4)).to eq("The One With the Sharks")
+    expect(get_episode_name(7, 21)).to eq("The One With the Vows")
+  end
+end
+
 RSpec.describe "get_episodes_by_season" do
   it "takes a season number as an argument and returns an array of that season's episodes (hashes)" do
     episodes = get_episodes_by_season(1)
@@ -34,21 +49,6 @@ RSpec.describe "who_played" do
   end
 end
 
-RSpec.describe "get_episode_names" do
-  it "returns an array of episode names" do
-    get_episode_names
-    expect(get_episode_names.length).to eq(236)
-    expect(get_episode_names.first).to eq("The One Where Monica Gets a Roommate")
-    expect(get_episode_names.last).to eq("The Last One,\n  Part 2")
-  end
-end
-
-RSpec.describe "get_episode_name" do
-  it "takes a season number and episode number as an argument and returns the name of the episode" do
-    expect(get_episode_name(9, 4)).to eq("The One With the Sharks")
-    expect(get_episode_name(7, 21)).to eq("The One With the Vows")
-  end
-end
 
 RSpec.describe "get_episode_by_name" do
   it "takes an episode name as an argument and returns a hash of data about that episode" do
