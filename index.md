@@ -24,17 +24,16 @@ let const or var keyword to indicate what kind of variable we're declaring
 | Concept  | JS  | Ruby |
 |---|---|---|
 | Variable Declaration | let (something that can change), const (don't change or get an error!), var (potential scoping issues) `const name ="Dakota"` | no keywords for declaration. `name = "Dakota"`  |
-| constant  | const varName (does throw an arrow if you try to reassign) |  ALL_CAPS_NAME (doesn't throw an error if you reassign it) |
-|   |   |   |
+| constant  | const varName (throws an error if you try to reassign) |  ALL_CAPS_NAME (doesn't throw an error if you reassign it) |
 ## Data Types
-String
-Boolean
-Integer
-Float
-Object (key value pair) => Hash in Ruby
-Array
-Symbol (:name)
-Function
+- String
+- Boolean
+- Integer
+- Float
+- Object (key value pair) => Hash in Ruby
+- Array
+- Symbol (:name)
+- Function
 
 
 ## Methods vs Functions
@@ -69,6 +68,35 @@ my_method
 
 ## Scope
 
+When we're loading code from another file using `require`, local variables don't make the trip, but constants (defined with ALL_CAPS) do. If we require a file that defines a constant, we'll be able to access it from the file we add the require in. 
+```rb
+# one_file.rb
+require 'another_file'
+puts name
+
+# another_file.rb
+name = "Dakota"
+```
+
+will raise an error:
+
+```
+undefined local variable or method `another file' for main:Object
+```
+
+whereas:
+
+```rb
+# one_file.rb
+require 'another_file'
+puts NAME
+
+# another_file.rb
+NAME = "Dakota"
+```
+
+will print "Dakota" to the console.
+
 ## Iterators
 | Concept  | JS  | Ruby |
 |---|---|---|
@@ -84,7 +112,7 @@ my_method
 |---|---|---|
 | Truthy | non empty strings, non zero numbers, arrays, objects, symbols  | everything but nil, & false  |
 | Falsey  | "", 0, null, undefined, false, NaN  | nil, false  |
-|   |   |   |
+
 
 ## Hashes vs Objects
 
