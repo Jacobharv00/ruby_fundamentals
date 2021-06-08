@@ -1,3 +1,3 @@
-[Ruby Fundamentals](/) | [Object Oriented Ruby](/oo_ruby)
+[Ruby Fundamentals](/ruby_fundamentals/) | [Object Oriented Ruby](/ruby_fundamentals/oo_ruby/)
 
 # Object Oriented Ruby
