@@ -196,6 +196,8 @@ friends["_embedded"]["episodes"].map {|episode| episode["name"] }
 
 ## Errors
 
+### Could not locate Gemfile on `bundle install`
+
 If you run `bundle install` and see an error that says 'Could not locate Gemfile'. Make sure to `cd` into the directory where the Gemfile. 
 
 `pwd` (print working directory) => shows the full path to the folder your terminal is inside of at the moment.
@@ -220,7 +222,7 @@ run again and you should see something like this:
  => 10: binding.pry
 ```
 
-ArgumentError
+### ArgumentError
 
 ```
 ArgumentError:
@@ -233,6 +235,7 @@ ArgumentError:
 3. Line number (line 32 is where the method is defined) 
 4. Line number (line 17 is where the method is called)
 
+### NoMethodError
 
 ```rb
 1: from /Users/dakotamartinez/Development/flatiron/lectures/ruby_fundamentals/lib/ruby_fundamentals/accessing_data.rb:40:in `get_episode_name'
