@@ -23,8 +23,8 @@ let const or var keyword to indicate what kind of variable we're declaring
 
 | Concept  | JS  | Ruby |
 |---|---|---|
-| Variable Declaration | let (something that can change), const (don't change or get an error!), var (potential scoping issues) `const name ="Dakota"` | no keywords for declaration. `name = "Dakota"`  |
-| constant  | const varName (throws an error if you try to reassign) |  ALL_CAPS_NAME (doesn't throw an error if you reassign it) |
+| Variable Declaration | let (something that can change), const (don't change or get an error!), var (potential scoping issues) `const name ="Dakota"` | no keywords for declaration. `name = "Dakota"` |
+| constant | const varName (throws an error if you try to reassign) | ALL_CAPS_NAME (doesn't throw an error if you reassign it) |
 
 ## Data Types
 - String
@@ -242,4 +242,25 @@ NoMethodError (undefined method `[]' for nil:NilClass)
 2. receiving object (in this case nil:NilClass)
 3. Line number
 
-You're looking for that line number and the place where that method appears. The error is telling you that the expression right before that method call returns the receiving object (nil in this case)
+You're looking for that line number and the place where that method appears. The error is telling you that the expression right before that method call returns the receiving object (nil in this case).
+
+The way around this particular error is to add a `nil` guard:
+
+```rb
+episode && episode["name"]
+```
+We had tried this really strange line of code in the afternoon lecture:
+
+```rb
+episode.try(:[], "name")
+```
+
+and we got:
+
+```rb
+NoMethodError (undefined method `try' for nil:NilClass)
+Did you mean?  pry
+```
+
+The [try method](https://www.rubydoc.info/docs/rails/4.1.7/Object:try) is actually built into the Ruby on Rails library and I was mistakenly trying to use it here, so that's why we saw this error.
+
