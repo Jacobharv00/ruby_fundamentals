@@ -1,4 +1,4 @@
-[Ruby Fundamentals](#) | [Object Oriented Ruby](/ruby_fundamentals/oo_ruby/)
+[Ruby Fundamentals](/ruby_fundamentals) | [Object Oriented Ruby](/ruby_fundamentals/oo_ruby)
 # Welcome to Ruby Fundamentals
 
 Today, we'll be interacting with ruby and learning how we can accomplish tasks related to data traversal. We'll be drawing on our knowledge of JavaScript frequently and comparing and contrasting how these fundamentals work in Ruby.
