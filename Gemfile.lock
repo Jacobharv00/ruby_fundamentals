@@ -1,8 +1,3 @@
-PATH
-  remote: .
-  specs:
-    ruby_fundamentals (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,7 +23,6 @@ PLATFORMS
 DEPENDENCIES
   rake (~> 12.0)
   rspec (~> 3.0)
-  ruby_fundamentals!
 
 BUNDLED WITH
    2.1.4
