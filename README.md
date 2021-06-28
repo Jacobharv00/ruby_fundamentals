@@ -1,44 +1,56 @@
-# RubyFundamentals
+# Ruby Fundamentals - JS ==> Ruby
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby_fundamentals`. To experiment with that code, run `bin/console` for an interactive prompt.
+## My Focus as a Lecturer
 
-TODO: Delete this and the text above, and describe your gem
+Over the next few weeks, my goal is to help you all to practice your technical communication skills. One of the most challenging parts of learning to code is learning to adjust the way you speak to an unfamiliar degree of accuracy and precision. Your ability to think programatically will improve as you practice using terminology to accurately describe what you're doing as you code. I want to help you all add good habits and skills to your toolbox so you are more effective–and happier–problem solvers.
 
-## Installation
+## Questions to Carry around with you as you code
 
-Add this line to your application's Gemfile:
+- What am I trying to do?
+- What's happening instead of that?
+- How can I explain what's happening now?
+- How can I test my explanation?
+- Was my explanation correct/complete?
 
-```ruby
-gem 'ruby_fundamentals'
-```
+When you watch professional athletes, you will see many variations of a pre-shot routine. 
+- A basketball player before shooting a free-throw
+- A runner before the start of a race
+- A golfer preparing to tee off
+- A batter preparing for the pitcher's windup.
 
-And then execute:
+Whatever the example, the purpose is to develop a set of behaviors that prepare the mind for the task at hand. Approaching programming in the same way can make it a much more enjoyable experience. As you work with me over the next couple of weeks, one of my goals is to share ideas that you can integrate into your routine to develop solid mind patterns that set you up for success. 
 
-    $ bundle install
+In programming, I see this as a series of questions that you repetitively ask yourself in different situations that move your mind in the directions it needs to go to solve a given type of problem.
 
-Or install it yourself as:
+## Topics
 
-    $ gem install ruby_fundamentals
+### Variables
 
-## Usage
+### Different data types: Array vs Hash
 
-TODO: Write usage instructions here
+### Functions
 
-## Development
+### Scoping
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+### Debugging
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/DakotaLMartinez/ruby_fundamentals. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/DakotaLMartinez/ruby_fundamentals/blob/master/CODE_OF_CONDUCT.md).
+### Gems installation and use
 
 
-## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-## Code of Conduct
 
-Everyone interacting in the RubyFundamentals project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/DakotaLMartinez/ruby_fundamentals/blob/master/CODE_OF_CONDUCT.md).
+## Skills
+
+### debug with irb, pry and puts
+
+### become familiar with ruby docs
+
+### write and execute a ruby method
+
+### access nested data from Hashes and Arrays with variable utilization
+
+### read rspec tests
+
+### implement each, map, find, select
+
