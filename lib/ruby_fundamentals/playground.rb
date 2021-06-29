@@ -1,4 +1,5 @@
-# const / let before variable declaration
+# const / let before variable declaration in JS
+# Constants in ruby are all caps
 NAME = "Dakota"
 
 # global var (don't do this!)
